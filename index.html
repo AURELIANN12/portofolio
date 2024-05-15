@@ -1,0 +1,454 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+   <head>
+     <meta charset="UTF-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>My Portfolio</title>
+     <!-- link html to css -->
+     <link rel="stylesheet" href="style.css" />
+     <link rel="stylesheet" href="mediaqueries.css" />
+   </head>
+   <body>
+      <!-- navigation bar -->
+     <nav id="desktop-nav">
+         <!-- my name as a logo -->
+       <div class="logo">Aurelian Olaru</div>
+       <div>
+        <!-- unordered list of navigations links in navbar -->
+        <!-- links leed to each section of the page -->
+         <ul class="nav-links">
+           <li><a href="#about">About</a></li>
+           <li><a href="#experience">Experience</a></li>
+           <li><a href="#projects">Projects</a></li>
+           <li><a href="#contact">Contact</a></li>
+         </ul>
+       </div>
+     </nav>
+     <!-- navigation bar for 1200,800,600px (hamburger navbar) -->
+     <nav id="hamburger-nav">
+       <div class="logo">Aurelian Olaru</div>
+       <div class="hamburger-menu">
+         <!-- hamburger menu icon -->
+         <!-- event ,when onclik do toogleMenu() (javaScript function) -->
+         <div class="hamburger-icon" onclick="toggleMenu()">
+             <!-- the lines of hamburger menu -->
+           <span></span>
+           <span></span>
+           <span></span>
+         </div>
+         <!-- links that will apear when we use function toggleMenu () function-->
+         <div class="menu-links">
+           <li><a href="#about" onclick="toggleMenu()">About</a></li>
+           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+         </div>
+       </div>
+     </nav>
+     <!-- profile section -->
+     <!-- my hero section -->
+     <section id="profile">
+       <div class="section__pic-container">
+         <!-- my profile picture -->
+         <img class="picture" src="assets/4.jpg" alt=" profile picture" />
+       </div>
+       
+       <!-- class container of text near the photo profile -->
+       <div class="section__text">
+         <p class="section__text__p1">Hello, I'm</p>
+         <h1 class="title">Aurelian Olaru</h1>
+         <p class="section__text__p2">On my way to FULL STACK DEVELOPER</p>
+         <div class="btn-container">
+             <!-- button (download my cv) -->
+           <button
+            
+             class="btn btn-color-2"
+          
+             onclick="window.open('cv.html')" 
+           >
+             My CV
+           </button>
+           <!-- button (link to contact section) -->
+           <button class="btn btn-color-1" onclick="location.href='./#contact'">
+             Contact Info
+           </button>
+         </div>
+         <div id="socials-container">
+             <!-- imagine linkedin icon -->
+             <!-- link to my linkedin page -->
+           <img
+             src="./assets/linkedin.png"
+             alt="My LinkedIn profile"
+             class="icon"
+             onclick="location.href='https://www.linkedin.com/in/aurelian-olaru-8292a9280/'"
+           />
+           <!-- image github icon
+           link to my github page -->
+           <img
+             src="./assets/github.png"
+             alt="My Github profile"
+             class="icon"
+             onclick="location.href='https://github.com/AURELIANN12'"
+           />
+         </div>
+       </div>
+     </section>
+     <!-- about me section witch include my photo and some information -->
+     <section id="about">
+       <p class="section__text__p1">Get To Know More</p>
+       <h1 class="title">About Me</h1>
+       <div class="section-container">
+         <!-- my second picture profile -->
+         <div class="section__pic-container">
+           <img
+             src="assets/me2.jpeg"
+             alt="Profile picture"
+             class="about-pic"
+           />
+         </div>
+         <div class="about-details-container">
+           <div class="about-containers">
+             <div class="details-container">
+                 <!-- Experinece icon -->
+               <img
+                 src="./assets/experience.png"
+                 alt="Experience icon"
+                 class="icon"
+               />
+               <h3>Experience</h3>
+               <!-- <p>2+ years <br />Frontend Development</p> -->
+               <p>1+ years of Self-learner <br />Juts it software Development, a 3 month intense course <br /> Python course 2 month at City University in London</p>
+             </div>
+             <div class="details-container">
+                 <!-- education icon -->
+               <img
+                 src="./assets/education.png"
+                 alt="Education icon"
+                 class="icon"
+               />
+               <h3>Education</h3>
+               <p>Bachelors Degree<br />Public Administration and Mnagement<br />Romania Alba Iulia</p>
+             </div>
+           </div>
+           <div class="text-container">
+             <p>
+              I am a self-motivated individual from Moldova, passionate about translating code into tangible 
+              projects. With a hands-on approach, I thrive on turning concepts into reality. While I may not be the most
+               verbose person, my empathetic nature enables me to connect deeply with others.<br />Facts to know about me<br />- Enjoy playing <span class="keyword">chess</span>, the chess mindsets 
+               helps me to approach the problem from various angles and try to solve it step by step like a puzzle.<br />
+              - I initiated and managed <span class="keyword">'We Debate'</span> , a 25 students group fostering debate skills across various topics.<br />
+              - As a member of the <span class="keyword">Youth Council</span> , I led initiatives securing grants for small social projects like playgrounds and additional bin collectors in the town.<br />
+               
+- I participated in consecutive years in local <span class="keyword">General Knowledge Olympiads</span> , enhancing my understanding of history, geography, science, 
+and diverse subjects, broadening my knowledge horizons.<br />
+- <span class="keyword">My guidance motto </span>: The best time to plant a tree was 20 years ago. The second best time is now
+
+
+             </p>
+           </div>
+         </div>
+       </div>
+       <!-- icon arrow, when clicked moves you to next section -->
+       <img
+         src="./assets/arrow.png"
+         alt="Arrow icon"
+         class="icon arrow"
+         onclick="location.href='./#experience'"
+       />
+       <!-- New section, experience section -->
+     </section>
+     <section id="experience">
+         <!-- <p class="section__text__p1">Explore My</p> -->
+         <h1 class="title">Skills</h1>
+         <div class="experience-details-container">
+           <div class="about-containers">
+             <div class="details-container">
+               <h2 class="experience-sub-title">Backend Development</h2>
+               <div class="article-container">
+                 <article>
+                     <!-- check mark icon -->
+                   <img
+                  
+                     src="./assets/checkmark.png"
+                     alt="Experience icon"
+                     class="icon"
+                   />
+                   <div>
+                     <!-- skils -->
+                     <h3>Python</h3>
+                     <p>Basic</p>
+                   </div>
+                 </article>
+                 <article>
+                     <!-- check mark icon -->
+                   <img
+                     src="./assets/checkmark.png"
+                     alt="Experience icon"
+                     class="icon"
+                   />
+                   <div> 
+                     <!-- skils -->
+                     <h3>Node.js</h3>
+                     <p>Basic</p>
+                   </div>
+                 </article>
+                 <article>
+                     <!-- check mark  icon-->
+                   <img
+                     src="./assets/checkmark.png"
+                     alt="Experience icon"
+                     class="icon"
+                   />
+                   <div>
+                     <!-- skils -->
+                     <h3>Tkinter</h3>
+                     <p>Basic</p>
+                   </div>
+                 </article>
+                 <article>
+                     <!-- check mark icon -->
+                   <img
+                     src="./assets/checkmark.png"
+                     alt="Experience icon"
+                     class="icon"
+                   />
+                   <div>
+                     <!-- skils -->
+                     <h3>MySQL</h3>
+                     <p>Basic</p>
+                   </div>
+                 </article>
+             
+               </div>
+             </div>
+             <div class="details-container">
+               <h2 class="experience-sub-title">Frontend Development</h2>
+               <div class="article-container">
+                 <article>
+                     <!-- check mark icon -->
+                   <img
+                     src="./assets/checkmark.png"
+                     alt="Experience icon"
+                     class="icon"
+                   />
+                   <div>
+                     <!-- skils -->
+                     <h3>JavaScript</h3>
+                     <p>Basic</p>
+                   </div>
+                 </article>
+                 <article>
+                     <!-- check mark icon -->
+                   <img
+                     src="./assets/checkmark.png"
+                     alt="Experience icon"
+                     class="icon"
+                   />
+                   <div>
+                     <!-- skils -->
+                     <h3>HTML</h3>
+                     <p>Basic</p>
+                   </div>
+                 </article>
+                 <article>
+                     <!-- check mark icon -->
+                   <img
+                     src="./assets/checkmark.png"
+                     alt="Experience icon"
+                     class="icon"
+                   />
+                   <div>
+                     <!-- skils -->
+                     <h3>Css</h3>
+                     <p>Basic</p>
+                   </div>
+                 </article>
+                 
+               </div>
+             </div>
+           </div>
+         </div>
+         <!-- arrow icon (link to next section on the page) -->
+         <img
+           src="./assets/arrow.png"
+           alt="Arrow icon"
+           class="icon arrow"
+           onclick="location.href='./#projects'"
+         />
+       </section>
+       <!-- Projects Section ,here i will atach my projects-->
+       <section id="projects">
+         <p class="section__text__p1">Browse My Recent</p>
+         <h1 class="title">Projects</h1>
+         <div class="experience-details-container">
+           <div class="about-containers">
+             <div class="details-container color-container">
+               <div class="article-container">
+                 <img
+                   src="./assets/quiz.jpg"
+                   alt="Project 1"
+                   class="project-img"
+                 />
+               </div>
+               <!-- project one ===================================-->
+               <h2 class="experience-sub-title project-title">QUIZ</h2>
+               <div class="btn-container">
+                 <!-- link to the project on github -->
+                 <button
+                   class="btn btn-color-2 project-btn"
+                   onclick="location.href='https://aureliann12.github.io/Autism-quiz.github.io/'"
+                 >
+                   Github
+                 </button>
+                 <button
+                   class="btn btn-color-2 project-btn"
+                   onclick="location.href='https://aureliann12.github.io/Autism-quiz.github.io/'"
+                 >
+                   Live Demo
+                 </button>
+               </div>
+             </div>
+             <div class="details-container color-container">
+               <div class="article-container">
+                 <img
+                   src="assets/weatherapp.jpg"
+                   alt="Project 2"
+                   class="project-img"
+                 />
+               </div>
+               <!-- project two ===================================-->
+               <h2 class="experience-sub-title project-title">WEATHER APP</h2>
+               <div class="btn-container">
+               
+                 <button
+                   class="btn btn-color-2 project-btn"
+                   onclick="location.href='https://aureliann12.github.io/weather-webpage/'"
+                   >
+                   Github
+                    </button>
+                    <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://aureliann12.github.io/weather-webpage/'"
+                   >
+                   Live Demo
+                   </button>
+               </div>
+               </div> 
+               <!-- ======================================== -->
+               <div class="details-container color-container">
+                 <div class="article-container">
+                   <img
+                     src="./assets/calculator.jpg"
+                     alt="Project 3"
+                     class="project-img"
+                   />
+                 </div>
+               
+             <!-- ==================================== ======-->
+             <h2 class="experience-sub-title project-title">CALCULATOR</h2>
+             <div class="btn-container">
+             
+               <button
+                 class="btn btn-color-2 project-btn"
+                 onclick="location.href='https://aureliann12.github.io/weather-webpage/'"
+                 >
+                 Github
+                  </button>
+                  <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://aureliann12.github.io/weather-webpage/'"
+                 >
+                 Live Demo
+                 </button>
+             </div>
+             </div> 
+             <!-- ======================================== -->
+             <div class="details-container color-container">
+               <div class="article-container">
+                 <img
+                   src="./assets/travelapp.jpg"
+                   alt="Project 3"
+                   class="project-img"
+                 />
+               </div>
+               <!-- project three ====================================-->
+               <h2 class="experience-sub-title project-title">TRAVEL SITE</h2>
+               <div class="btn-container">
+                 <!-- link to the project on github -->
+                 <button
+                   class="btn btn-color-2 project-btn"
+                   onclick="location.href='https://github.com/AURELIANN12/TravelPage'"
+                   
+                 >
+                   Github
+                 </button>
+                 <button
+                   class="btn btn-color-2 project-btn"
+                   onclick="location.href='https://aureliann12.github.io/TravelPage/'"
+                 >
+                   Live Demo
+                 </button>
+               </div>
+             </div>
+           </div>
+         </div>
+         <!-- again arrow (link to the next section on the page) -->
+         <img
+           src="./assets/arrow.png"
+           alt="Arrow icon"
+           class="icon arrow"
+           onclick="location.href='./#contact'"
+         />
+       </section>
+       <!-- contact section -->
+       <section id="contact">
+         <p class="section__text__p1">Get in Touch</p>
+         <h1 class="title">Contact Me</h1>
+         <div class="contact-info-upper-container">
+           <div class="contact-info-container">
+             <!-- email icon -->
+             <img
+               src="./assets/email.png"
+               alt="Email icon"
+               class="icon contact-icon email-icon"
+             />
+             <!-- link to email -->
+             <!-- <p><a href="olaruaurelian9@gmail.com">My Email</a></p> -->
+             <p><a href="mailto:olaruaurelian9@gmail.com">Email Me</a></p>
+ 
+           </div>
+           <div class="contact-info-container">
+             <!-- linkedin icon -->
+             <img
+               src="./assets/linkedin.png"
+               alt="LinkedIn icon"
+               class="icon contact-icon"
+             />
+             <!-- link to linkedin -->
+             <p><a href="https://www.linkedin.com/in/aurelian-olaru-8292a9280/">LinkedIn</a></p>
+           </div>
+         </div>
+       </section>
+       <footer>
+         <!-- another navigation bar at the end of the page -->
+         <nav>
+           <div class="nav-links-container">
+             <ul class="nav-links">
+                 <!-- (i need to add top of the page here) -->
+               <li><a href="#about">About</a></li>
+               <li><a href="#experience">Experience</a></li>
+               <li><a href="#projects">Projects</a></li>
+               <li><a href="#contact">Contact</a></li>
+             </ul>
+           </div>
+         </nav>
+         <!-- Fancy oficial look -->
+         <!-- &#169 is the code for copyright symbol -->
+         <p>Copyright &#169; 2023 Aurelian Olaru. All Rights Reserved.</p>
+       </footer>
+       <!-- link to my JavaScript file -->
+       <script src="script.js"></script>
+     </body>
+   </html>
